@@ -2,4 +2,11 @@ const express = require('express');
 
 const app = express();
 
-app.listen(3000);
+app.get('/', (request, response) => {
+  return response.json({
+    evento: 'Semana Omnistack 11.0',
+    aluno: 'Davilson Junior',
+  });
+});
+
+app.listen(3333);
